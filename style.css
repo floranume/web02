@@ -366,6 +366,16 @@ header .top-header {
     width: 130px;
 }
 
+.food-space .food-space-mid .space-kg {
+    border: 2px solid var(--yellow-color);
+    border-radius: 5px;
+    padding: 0px 3px;
+    margin: 0 30px 50px;
+    width: 130px;
+    background-color: #000;
+    color: var(--bovien-color);
+}
+
 .food-space .food-space-mid {
     display: flex;
     align-items: center;
