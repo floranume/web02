@@ -1,0 +1,91 @@
+:root {
+    --red-color: #DE0000;
+    --yellow-color: #FFC700;
+    --font-color: #000;
+    --white-color: #fff;
+    --bovien-color: #B7B7B7;
+    --gach-chan: #DDDDDD;
+}
+
+html p {
+    margin: 0;
+}
+
+@media (max-width: 575.98px) {
+
+    header .top-header,
+    .header-main .header-main-dathang,
+    .header-main .nav {
+        display: none;
+    }
+
+    header .navbar {
+        display: block !important;
+
+    }
+
+    header .header-main {
+        height: 0%;
+    }
+
+    header .banner {
+        margin-top: 60px;
+    }
+
+    .main .food-sp-item {
+
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .main .food-sp-item .item1 {
+        margin-bottom: 30px;
+    }
+
+    .main .food-sp-item .item1-giau {
+        display: none;
+    }
+
+    .menu .menu-food-mid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .menu .menu-food-ds {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+
+    }
+
+    .menu .menu-food-ds .menu-item-list1 {
+        display: none;
+    }
+
+    .intro .intro-main,
+    .news-events .news-main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .intro .intro-main .intro-cty {
+        margin: 30px 0;
+    }
+
+    .video .video-amthuc {
+        text-align: center;
+    }
+
+    footer .menu-foot,
+    footer .addr .addr-h,
+    footer .fanpage-h,
+    footer .map-h {
+        text-align: left;
+        margin-left: 20px;
+    }
+}

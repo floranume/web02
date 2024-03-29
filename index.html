@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thien Duyen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -87,6 +88,57 @@
                         <p>LIÊN HỆ</p>
                     </div>
                 </div>
+
+
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">PHÁT KÝ FOOD</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
             </div>
         </div>
         <div class="banner">
@@ -102,7 +154,7 @@
                     <h2>PHÁT KÝ FOOD HÂN HẠNH PHỤC VỤ QUÝ KHÁCH</h2>
                 </div>
 
-                <div class="service-item col-3">
+                <div class="service-item col-lg-3 col-sm-6 ">
                     <div class="item-img item-1">
                         <img src="./img/tray 1.png" alt="">
                     </div>
@@ -110,7 +162,7 @@
                         <p>Cam kết món rất ngon, chuẩn vị của người Việt Nam</p>
                     </div>
                 </div>
-                <div class="service-item col-3">
+                <div class="service-item col-lg-3 col-sm-6 ">
                     <div class="item-img item-2">
                         <img src="./img/salad 1.png" alt="">
                     </div>
@@ -119,7 +171,7 @@
                     </div>
 
                 </div>
-                <div class="service-item col-3">
+                <div class="service-item col-lg-3 col-sm-6 ">
                     <div class="item-img item-3">
                         <img src="./img/team 1.png" alt="">
                     </div>
@@ -127,7 +179,7 @@
                         <p>Nhân viên phục vụ tận tâm, chu đáo xuyên suốt bứa ăn</p>
                     </div>
                 </div>
-                <div class="service-item col-3">
+                <div class="service-item col-lg-3 col-sm-6 ">
                     <div class="item-imgitem-4">
                         <img src="./img/clock 1.png" alt="">
                     </div>
@@ -232,7 +284,7 @@
                         </div>
                     </div>
                     <!-- item5 -->
-                    <div class="item1">
+                    <div class="item1 item1-giau">
                         <div class="item1-img">
                             <img src="./img/image 3 (4).png" alt="">
                         </div>
@@ -289,7 +341,7 @@
                     </div>
                 </div>
                 <div class="menu-food-ds row">
-                    <div class="menu-item-list col-6">
+                    <div class="menu-item-list menu-item-list1 col-6">
                         <div class="menu-item">
                             <div class="menu-item-img">
                                 <img src="./img/image 4.png" alt="">
@@ -497,13 +549,13 @@
             </div>
 
             <div class="chinhanh-map row">
-                <div class="map col-6">
+                <div class="map col-lg-6 col-sm-12">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125575.34396698765!2d107.12305074999999!3d10.4033386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756fd4554f0cf5%3A0xb24fd23bf641fa40!2zVsWpbmcgVMOgdSwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdQ!5e0!3m2!1svi!2s!4v1711463766157!5m2!1svi!2s"
                         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="chinhanh-khac col-6">
+                <div class="chinhanh-khac col-lg-6 col-sm-12">
                     <div class="chinhanh-item">
                         <i class="bi bi-plus-circle"></i>
                         <p>Chi nhánh 1: <b>56A DÂN CHỦ, BÌNH THỌ, TP. THỦ ĐỨC</b></p>
@@ -532,7 +584,7 @@
                     <h2>VIDEO</h2>
                 </div>
                 <div class="video-list row">
-                    <div class="video-item col-3">
+                    <div class="video-item col-lg-3 col-sm-6">
                         <div class="item-video-img">
                             <img src="./img/Rectangle 17 (1).png" alt="">
                         </div>
@@ -540,7 +592,7 @@
                             <p>Tiêu đề video được ghi ở đây</p>
                         </div>
                     </div>
-                    <div class="video-item col-3">
+                    <div class="video-item col-lg-3 col-sm-6">
                         <div class="item-video-img">
                             <img src="./img/Rectangle 17 (1).png" alt="">
                         </div>
@@ -548,7 +600,7 @@
                             <p>Tiêu đề video được ghi ở đây</p>
                         </div>
                     </div>
-                    <div class="video-item col-3">
+                    <div class="video-item col-lg-3 col-sm-6">
                         <div class="item-video-img">
                             <img src="./img/Rectangle 17 (1).png" alt="">
                         </div>
@@ -556,7 +608,7 @@
                             <p>Tiêu đề video được ghi ở đây</p>
                         </div>
                     </div>
-                    <div class="video-item col-3">
+                    <div class="video-item col-lg-3 col-sm-6">
                         <div class="item-video-img">
                             <img src="./img/Rectangle 17 (1).png" alt="">
                         </div>
@@ -575,7 +627,7 @@
                 <h2>TIN TỨC VÀ SỰ KIỆN</h2>
             </div>
             <div class="news-main row">
-                <div class="news-item col-6">
+                <div class="news-item col-lg-6 col-sm-12">
                     <div class="news-item-img">
                         <img src="./img/Rectangle 7.png " alt="">
                     </div>
@@ -594,12 +646,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-item item-list-con col-6 ">
+                <div class="news-item item-list-con col-lg-6 ">
                     <div class="news-item-con row">
-                        <div class="news-item-con-img col-6">
+                        <div class="news-item-con-img col-lg-6">
                             <img src="./img/Rectangle 4.png" alt="">
                         </div>
-                        <div class="news-item-con-nd col-6">
+                        <div class="news-item-con-nd col-lg-6">
                             <div class="news-item-con-nd-h">
                                 <p>Cánh gà chiên mãi chán rồi, đổi vị nhồi cơm ngon "quên lối về"</p>
                             </div>
@@ -615,10 +667,10 @@
                     </div>
 
                     <div class="news-item-con1 row">
-                        <div class="news-item-con-img col-6">
+                        <div class="news-item-con-img col-lg-6">
                             <img src="./img/Rectangle 4.png" alt="">
                         </div>
-                        <div class="news-item-con-nd col-6">
+                        <div class="news-item-con-nd col-lg-6">
                             <div class="news-item-con-nd-h">
                                 <p>Cánh gà chiên mãi chán rồi, đổi vị nhồi cơm ngon "quên lối về"</p>
                             </div>
@@ -634,10 +686,10 @@
                     </div>
 
                     <div class="news-item-con row">
-                        <div class="news-item-con-img item col-6">
+                        <div class="news-item-con-img item col-lg-6">
                             <img src="./img/Rectangle 4.png" alt="">
                         </div>
-                        <div class="news-item-con-nd item col-6">
+                        <div class="news-item-con-nd item col-lg-6">
                             <div class="news-item-con-nd-h">
                                 <p>Cánh gà chiên mãi chán rồi, đổi vị nhồi cơm ngon "quên lối về"</p>
                             </div>
@@ -651,68 +703,73 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
 
             </div>
         </div>
     </div>
     <footer>
-        <div class="footer-top row">
+        <!-- Nãy do cái footer top nó làm chạy ngang  -->
+        <div class="container">
+            <div class="footer-top row">
 
-            <div class="addr col-3">
-                <div class="addr-h footer-con-h">
-                    <p>PHÁT KÝ FOOD</p>
-                </div>
-                <div class="addr-dc addr-item">
-                    <i class="bi bi-geo-alt"></i>
-                    <p>Địa chỉ <br>
-                        CN1: 56A Dân Chủ, Bình Thọ, Thành phố Thủ Đức <br>
-                        CN2: 224 Hoàng Diệu 2, Linh Chiểu, Thành phố Thủ Đức</p>
-                </div>
-                <div class="addr-hot addr-item">
-                    <i class="bi bi-telephone"></i>
-                    <p>Hotline: 0326227757</p>
-                </div>
-                <div class="addr-email addr-item">
-                    <i class="bi bi-envelope"></i>
-                    <p>Email: phatkyfood@gmail.com</p>
-                </div>
-                <div class="addr-icon addr-item">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-youtube"></i>
-                </div>
-            </div>
-            <div class="menu-foot col-3">
-                <div class="menu-foot-h footer-con-h">
-                    <p>MENU CHÚNG TÔI</p>
-                </div>
-                <div class="menu-foot-nd">
-                    <p>Cơm chiên</p>
-                    <p>Mì xào</p>
-                    <p>Hủ tiếu xào</p>
-                    <p>Bún miến xào</p>
-                    <p>Bò né</p>
-                </div>
-            </div>
-            <div class="fanpage col-3">
-                <div class="fanpage-h">FANPAGE</div>
-                <div class="fanpage-nd">
-                    <div class="fb-page" data-href="https://www.facebook.com/POPSTVVIETNAM/" data-tabs="timeline"
-                        data-width="316px" data-height="280px" data-small-header="false"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/POPSTVVIETNAM/" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/POPSTVVIETNAM/">POPS TV Vietnam</a></blockquote>
+                <div class="addr col-lg-3 col-sm-12">
+                    <div class="addr-h footer-con-h">
+                        <p>PHÁT KÝ FOOD</p>
+                    </div>
+                    <div class="addr-dc addr-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>Địa chỉ <br>
+                            CN1: 56A Dân Chủ, Bình Thọ, Thành phố Thủ Đức <br>
+                            CN2: 224 Hoàng Diệu 2, Linh Chiểu, Thành phố Thủ Đức</p>
+                    </div>
+                    <div class="addr-hot addr-item">
+                        <i class="bi bi-telephone"></i>
+                        <p>Hotline: 0326227757</p>
+                    </div>
+                    <div class="addr-email addr-item">
+                        <i class="bi bi-envelope"></i>
+                        <p>Email: phatkyfood@gmail.com</p>
+                    </div>
+                    <div class="addr-icon addr-item">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
                     </div>
                 </div>
-            </div>
-            <div class="maps col-3">
-                <div class="map-h">BẢN ĐỒ</div>
-                <div class="map-nd">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15662.812320707668!2d107.1549153482789!3d11.060873434903453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174f0e641337d11%3A0x950c678037d10189!2zROG7kWMgTcahLCBUaOG7kW5nIE5o4bqldCwgxJDhu5NuZyBOYWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1711481318125!5m2!1svi!2s"
-                        width="316" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="menu-foot col-lg-3 col-sm-12">
+                    <div class="menu-foot-h footer-con-h">
+                        <p>MENU CHÚNG TÔI</p>
+                    </div>
+                    <div class="menu-foot-nd">
+                        <p>Cơm chiên</p>
+                        <p>Mì xào</p>
+                        <p>Hủ tiếu xào</p>
+                        <p>Bún miến xào</p>
+                        <p>Bò né</p>
+                    </div>
+                </div>
+                <div class="fanpage col-lg-3 col-sm-12">
+                    <div class="fanpage-h">FANPAGE</div>
+                    <div class="fanpage-nd">
+                        <div class="fb-page" data-href="https://www.facebook.com/POPSTVVIETNAM/" data-tabs="timeline"
+                            data-width="316px" data-height="280px" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/POPSTVVIETNAM/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/POPSTVVIETNAM/">POPS TV Vietnam</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="maps col-lg-3 col-sm-12">
+                    <div class="map-h">BẢN ĐỒ</div>
+                    <div class="map-nd">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15662.812320707668!2d107.1549153482789!3d11.060873434903453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174f0e641337d11%3A0x950c678037d10189!2zROG7kWMgTcahLCBUaOG7kW5nIE5o4bqldCwgxJDhu5NuZyBOYWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1711481318125!5m2!1svi!2s"
+                            width="316" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -720,6 +777,8 @@
             <p>Copyright © 2022 - Thiết kế bởi Sikido.vn</p>
         </div>
     </footer>
+
+
 
 
 

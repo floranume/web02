@@ -62,6 +62,8 @@ header .top-header {
     justify-content: center;
 }
 
+.header-main .header-main-dathang .logo {}
+
 .header-main .header-main-dathang .search-box .src-input {
     width: 300px;
     height: 30px;
@@ -133,12 +135,43 @@ header .top-header {
     margin: 20px 0;
     color: var(--font-color);
 
+
+}
+
+.header-main .navbar {
+    display: none;
 }
 
 .header-main .nav .item {
     text-align: center;
     font-size: 15px;
+    position: relative;
 }
+
+.header-main .nav .item::after {
+    content: '';
+    display: inline-block;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+    bottom: -5px;
+
+    transition: width 1s;
+
+
+}
+
+.header-main .nav .item:hover::after {
+    width: 100%;
+    background-color: #DE0000;
+    cursor: cell;
+}
+
+
+
+
 
 .header-main .nav .home {
     color: var(--red-color);
@@ -150,6 +183,18 @@ header .top-header {
 
 .banner img {
     width: 100%;
+}
+
+
+.main,
+.menu,
+.intro,
+.food-space,
+.chinhanh,
+.video,
+.video,
+.news-events {
+    overflow: hidden;
 }
 
 .main .service,
@@ -224,6 +269,7 @@ header .top-header {
     justify-content: space-between;
     background-color: #000;
     padding: 20px 0;
+
 
 }
 
