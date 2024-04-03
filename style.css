@@ -300,7 +300,7 @@ header .top-header {
 .main .service,
 .main .food-special,
 .menu,
-.intro .intro-main,
+
 .food-space .food-space-main,
 .chinhanh,
 .video,
@@ -482,18 +482,32 @@ header .top-header {
     
 }
 
+.intro{
+    margin: 15px 0 50px;
+}
 
-
-
+.intro .intro-main{
+    float: left;
+    
+    
+}
 
 .intro .intro-img {
     margin-right: 15px;
+    float: left;
+    width: calc(50% - 15px);
+    
+    
 }
-/* .intro .intro-img img   {
+.intro .intro-img img   {
     width: 100%;
-} */
+}
 .intro .intro-cty {
     margin-left: 15px;
+    float: left;
+    width: calc(50% - 15px);
+    
+    
 }
 
 .intro .intro-cty .intro-cty-h {
