@@ -55,16 +55,11 @@ html p {
         flex-direction: row;
     }
 
-    .menu .menu-food-ds {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: center;
-
-    }
+    
 
     .menu .menu-food-ds .menu-item-list1 {
         display: none;
+        width: 100%;
     }
 
     .intro .intro-main,
@@ -72,7 +67,9 @@ html p {
         display: flex;
         flex-flow: column wrap;
     }
-
+    .intro .intro-img img   {
+        width: 100%;
+    }
     .intro .intro-main .intro-cty {
         margin: 30px 0;
     }
